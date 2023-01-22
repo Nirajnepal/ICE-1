@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  ICE Lab 1
 //
-//  Created by Prajjwal Bhandari on 22/01/2023.
+//  Created by Niraj Nepal on 22/01/2023.
 //
 
 import UIKit
