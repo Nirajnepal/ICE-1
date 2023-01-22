@@ -13,8 +13,13 @@
 		D9276526297DDBDC00D89939 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9276525297DDBDC00D89939 /* GameScene.swift */; };
 		D9276528297DDBDC00D89939 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9276527297DDBDC00D89939 /* GameViewController.swift */; };
 		D927652B297DDBDC00D89939 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9276529297DDBDC00D89939 /* Main.storyboard */; };
-		D927652D297DDBDD00D89939 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D927652C297DDBDD00D89939 /* Assets.xcassets */; };
 		D9276530297DDBDD00D89939 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D927652E297DDBDD00D89939 /* LaunchScreen.storyboard */; };
+		D9276539297DE34700D89939 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = D9276538297DE34700D89939 /* Assets */; };
+		D927653B297DE55000D89939 /* Assets.xcassets .xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D927653A297DE55000D89939 /* Assets.xcassets .xcassets */; };
+		D927653E297DE7F000D89939 /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D927653D297DE7F000D89939 /* GameObject.swift */; };
+		D9276540297DE91C00D89939 /* GameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D927653F297DE91C00D89939 /* GameProtocol.swift */; };
+		D9276543297DEAB000D89939 /* Ocean.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9276542297DEAB000D89939 /* Ocean.swift */; };
+		D9276545297DEC1E00D89939 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9276544297DEC1E00D89939 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,8 +30,13 @@
 		D9276525297DDBDC00D89939 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		D9276527297DDBDC00D89939 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		D927652A297DDBDC00D89939 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D927652C297DDBDD00D89939 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D927652F297DDBDD00D89939 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D9276538297DE34700D89939 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Assets; path = ../../../../../../Downloads/Assets; sourceTree = "<group>"; };
+		D927653A297DE55000D89939 /* Assets.xcassets .xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Assets.xcassets .xcassets"; sourceTree = "<group>"; };
+		D927653D297DE7F000D89939 /* GameObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameObject.swift; sourceTree = "<group>"; };
+		D927653F297DE91C00D89939 /* GameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProtocol.swift; sourceTree = "<group>"; };
+		D9276542297DEAB000D89939 /* Ocean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ocean.swift; sourceTree = "<group>"; };
+		D9276544297DEC1E00D89939 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,16 +69,37 @@
 		D927651E297DDBDC00D89939 /* ICE Lab 1 */ = {
 			isa = PBXGroup;
 			children = (
+				D9276541297DEA9800D89939 /* GameObjects */,
+				D927653C297DE7C100D89939 /* Core */,
+				D9276538297DE34700D89939 /* Assets */,
 				D927651F297DDBDC00D89939 /* AppDelegate.swift */,
+				D927653A297DE55000D89939 /* Assets.xcassets .xcassets */,
 				D9276521297DDBDC00D89939 /* GameScene.sks */,
 				D9276523297DDBDC00D89939 /* Actions.sks */,
 				D9276525297DDBDC00D89939 /* GameScene.swift */,
 				D9276527297DDBDC00D89939 /* GameViewController.swift */,
 				D9276529297DDBDC00D89939 /* Main.storyboard */,
-				D927652C297DDBDD00D89939 /* Assets.xcassets */,
 				D927652E297DDBDD00D89939 /* LaunchScreen.storyboard */,
 			);
 			path = "ICE Lab 1";
+			sourceTree = "<group>";
+		};
+		D927653C297DE7C100D89939 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D927653D297DE7F000D89939 /* GameObject.swift */,
+				D927653F297DE91C00D89939 /* GameProtocol.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D9276541297DEA9800D89939 /* GameObjects */ = {
+			isa = PBXGroup;
+			children = (
+				D9276542297DEAB000D89939 /* Ocean.swift */,
+				D9276544297DEC1E00D89939 /* Player.swift */,
+			);
+			path = GameObjects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,8 +161,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D927652B297DDBDC00D89939 /* Main.storyboard in Resources */,
+				D9276539297DE34700D89939 /* Assets in Resources */,
+				D927653B297DE55000D89939 /* Assets.xcassets .xcassets in Resources */,
 				D9276522297DDBDC00D89939 /* GameScene.sks in Resources */,
-				D927652D297DDBDD00D89939 /* Assets.xcassets in Resources */,
 				D9276530297DDBDD00D89939 /* LaunchScreen.storyboard in Resources */,
 				D9276524297DDBDC00D89939 /* Actions.sks in Resources */,
 			);
@@ -144,8 +176,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D927653E297DE7F000D89939 /* GameObject.swift in Sources */,
+				D9276540297DE91C00D89939 /* GameProtocol.swift in Sources */,
 				D9276526297DDBDC00D89939 /* GameScene.swift in Sources */,
 				D9276528297DDBDC00D89939 /* GameViewController.swift in Sources */,
+				D9276545297DEC1E00D89939 /* Player.swift in Sources */,
+				D9276543297DEAB000D89939 /* Ocean.swift in Sources */,
 				D9276520297DDBDC00D89939 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
